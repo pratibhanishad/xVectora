@@ -1,0 +1,11 @@
+{
+  "name": "xvectora-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^10.4.0"
+  }
+}

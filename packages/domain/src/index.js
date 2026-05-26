@@ -17,12 +17,17 @@ const { PredictionRunnerPort } = require('./ports/PredictionRunnerPort');
 const { RecommendationRepositoryPort } = require('./ports/RecommendationRepositoryPort');
 const { MaintenanceSystemPort } = require('./ports/MaintenanceSystemPort');
 const { NotificationPort } = require('./ports/NotificationPort');
-
+const { GetAssetHealth } = require('./usecases/GetAssetHealth');
+const { MLInferencePort } = require('./ports/MLInferencePort');
+const { DetectAnomalies } = require('./usecases/DetectAnomalies');
 module.exports = {
   User,
   AssetRepositoryPort,
   PredictionRunnerPort,
   RecommendationRepositoryPort,
   MaintenanceSystemPort,
-  NotificationPort
+  NotificationPort,
+  GetAssetHealth,
+  MLInferencePort,
+  DetectAnomalies
 };

@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     files: ["packages/domain/src/**/*.js"],
     rules: {

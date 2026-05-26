@@ -26,5 +26,4 @@ jobs:
         run: node tests/architecture.test.js
 
       - name: Run Lint
-        run: npx eslint packages/domain/src --ext .js --no-eslintrc -c .eslintrc.js
-
+        run: npx eslint packages/domain/src/ --rule '{"no-restricted-imports": ["error", {"patterns": ["express", "mongoose", "axios"]}]}'
